@@ -6,7 +6,6 @@ import random
 import time
 import discord
 from dotenv import load_dotenv
-from webserver import keep_alive
 
 
 
@@ -67,7 +66,7 @@ async def on_message(message):
         await message.channel.send("Fixed all problems")
 
     elif message.content == 'raise-exception':
-        print("Bro ye tune kyu add kia hai ?")
+        print("Somoone wants to raise exeption")
 
 
     else:
@@ -80,7 +79,7 @@ async def on_message(message):
         print("  ")
 
 
-keep_alive()
+
 
 
 TOKEN = os.environ.get('Your Token')
